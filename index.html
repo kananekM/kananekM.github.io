@@ -8,6 +8,19 @@
     <div style="text-align: center;">
       <div style="width: 500px; margin: 0 auto; ">หวัดดีจ้า</div>
     </div>
+    <div id="chat">
+        <p id="count"></p>
+    </div>
+    <input type="text">
+    <button onclick="send" >ส่ง</button>
 
   </body>
+<script>
+  TextCount = document.getElementById("count");
+  x = 0;
+  function send(){
+    TextCount.innerHTML = x+1
+  }
+</script>
+
 </html>
