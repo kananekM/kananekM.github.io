@@ -1,27 +1,26 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+
 <html>
-  <head>
-    <title>Center</title>
-  </head>
-  <body>
 
-    <div style="text-align: center;">
-      <div style="width: 500px; margin: 0 auto; ">หวัดดีจ้า</div>
-    </div>
-    <div id="chat">
-        <p id="count"></p>
-    </div>
-    <input type="text">
-    <button onclick="send()" >ส่ง</button>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>JavaScript Demo</title>
 
-  </body>
-<script>
-  TextCount = document.getElementById("count");
-  x = 0;
-  function send(){
-    TextCount.innerHTML = x+1
-    console.log("click")
-  }
-</script>
+</head>
+
+<body>
+  <h1> Test CHATBOT </h1>
+  <script>
+    (function () {
+      var w = window, d = document;
+      var s = "https://app.chatplus.jp/cp.js";
+      d["__cp_d"] = "https://app.chatplus.jp";
+      d["__cp_c"] = "48f7ade9_3";
+      var a = d.createElement("script"), m = d.getElementsByTagName("script")[0];
+      a.async = true, a.src = s, m.parentNode.insertBefore(a, m);
+    })();
+  </script>
+</body>
 
 </html>
