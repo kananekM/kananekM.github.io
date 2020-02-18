@@ -1,26 +1,66 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width" />
-  <title>JavaScript Demo</title>
-
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
-  <h1> Test CHATBOT </h1>
-  <script>
-    (function () {
-      var w = window, d = document;
-      var s = "https://app.chatplus.jp/cp.js";
-      d["__cp_d"] = "https://app.chatplus.jp";
-      d["__cp_c"] = "48f7ade9_3";
-      var a = d.createElement("script"), m = d.getElementsByTagName("script")[0];
-      a.async = true, a.src = s, m.parentNode.insertBefore(a, m);
-    })();
-  </script>
+<style>
+  .card {
+    padding-left: 10;
+    border-bottom: 1px solid #DDE2EE;
+    display: flex;
+    flex-direction: row;
+  }
+  .imgStyle {
+    width: 14;
+    height: 22;
+  }
+  .flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16;
+  padding-right: 14;
+  padding-top: 10;
+  padding-bottom: 10;
+  border-bottom: 1px solid #DDE2EE;
+  display: flex;
+}
+</style>
+
+<body bgcolor="#EEF2FA">
+  <div style="background-color:#FFFFFF; margin-top: 24;">
+    <div class="flex-container">
+      <div><span style="color:#4F5E76;">ログインができない</span></div>
+      <img class="imgStyle" src="../../../../assets/images/icon-chevron-next.png"/>
+    </div>
+    <div class="flex-container">
+      <div><span style="color:#4F5E76;">メニューの難易度を変えたい</span></div>
+      <img class="imgStyle" src="../../../../assets/images/icon-chevron-next.png"/>
+    </div>
+    <div class="flex-container">
+      <div><span style="color:#4F5E76;">会員登録情報を変えたい</span></div>
+      <img class="imgStyle" src="../../../../assets/images/icon-chevron-next.png"/>
+    </div>
+    <div class="flex-container">
+      <div><span style="color:#4F5E76;">マイルを使用したい</span></div>
+      <img class="imgStyle" src="../../../../assets/images/icon-chevron-next.png"/>
+    </div>
+    <div class="flex-container">
+      <div><span style="color:#4F5E76;">マイルの貯め方</span></div>
+      <img class="imgStyle" src="../../../../assets/images/icon-chevron-next.png"/>
+    </div>
+  </div>
 </body>
+
+<script>
+  (function () {
+    var w = window, d = document;
+    var s = "https://app.chatplus.jp/cp.js";
+    d["__cp_d"] = "https://app.chatplus.jp";
+    d["__cp_c"] = "48f7ade9_3";
+    var a = d.createElement("script"), m = d.getElementsByTagName("script")[0];
+    a.async = true, a.src = s, m.parentNode.insertBefore(a, m);
+  })();
+</script>
 
 </html>
